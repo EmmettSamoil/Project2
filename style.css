@@ -1,0 +1,31 @@
+.heading {
+    display: flex;
+    justify-content: space-between;  
+}
+
+.cartBtn {
+    text-align: center;
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50; /* Green */
+    transition-duration: 0.4s;
+    width: 100px;
+    height: 25px;
+    text-decoration: none;
+    font-size: large;
+}
+
+.cartBtn:hover {
+    background-color:#4CAF50;
+    color: white;
+}
+
+.playlistDiv {
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 150;
+}
+
+body {
+    padding: 15px;
+}

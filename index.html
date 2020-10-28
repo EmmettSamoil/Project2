@@ -1,18 +1,42 @@
 <!DOCTYPE html>
 <html>
+  <link rel="stylesheet" href="cartBilling.css">
 <head>
-    <title>Playlist shopper</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <div class='heading'>
+    <p><h1>Playlist Shopper</h1></p>
+    <a href='checkout.html' class='cartBtn'>Purchase</a>
+  </div>
+  <div class='playlistDiv'>ha</div>
+  <div class="col-25">
+    <div class="container" id='cartOutput'>
+      <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+      <p id='cartItems'>
+      <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+      </p>
+      <hr>
+      <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+    </div>
+  </div>
+ <div class='topRow'>
+  <div class='spotifyTopLeft'>
+    <iframe src="https://open.spotify.com/embed/playlist/0W5cCvywr8PxPYZay3g9QO" width="275" height="350" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <p>This Playlist is a collection of moderns chill hip hop songs. Allowing the user to fully immerse themselves.</p>
+    <button class='purchaseBtn' id='purchase1'>Purchase</button>
+  </div>
 
-<h1>Playlist Shop</h1>
-<a href='checkout.html'>Checkout</a>
-<p>Browse through these playlists!
-If anything catches your attention add it to your cart.
-When satisfied with what you have selcted head to the checkout.
-</p>
+  <div class='spotifyTopCenter'>
+    <iframe src="https://open.spotify.com/embed/playlist/6FKwdoCAoVNor5h1nO7p2d" width="275" height="350" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <p>This playlist is for those who love rock and roll. With new songs being added every week it is a must have!</p> 
+    <button class='purchaseBtn' id='purchase2'>Purchase</button>
+  </div>
 
+  <div class='spotifyTopRight'>
+    <iframe src="https://open.spotify.com/embed/playlist/5sH6LByRYohgLkW8MzA02s" width="275" height="350" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <p>This Playlist was made for anyone who grew up in the 2000's. Provding many bangers from variety of artists.</p>
+    <button class='purchaseBtn' id='purchase3'>Purchase</button>
+  </div>
+  </div>
+  <script type="text/javascript" src="ezFunctionLib.js"></script>
 <script type='text/javascript' src="main.js"></script>
 </body>
 </html>
