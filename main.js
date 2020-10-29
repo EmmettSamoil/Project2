@@ -1,9 +1,19 @@
 let productList = [];
 let cartEl = document.getElementById('cartOutput');
-document.getElementById('purchase1').addEventListener('click', addChill);
+document.getElementById('purchase1').addEventListener('click', addAlbum);
+document.getElementById('purchase2').addEventListener('click', addAlbum);
+document.getElementById('purchase3').addEventListener('click', addAlbum)
 
-function addChill() {
-    productList.push(addProduct('Chill'));
+function addAlbum(event) {
+    let albumName = event.target.dataset.name;
+    productList.push(addProduct(albumName));
+
+    document.getElementById('cartItems').innerHTML = '';
+    for (let i = 0; i < productList.length; i++) {
+        document.getElementById('cartItems').innerHTML += '<p>' + productList[i].name + '</a> <span class="price">$5</span></p>';
+        document.getElementById('cartAmount').innerHTML = [i + 1];
+        document.getElementById('cartCost').innerHTML = [i + 1] * 5
+    }
 }
 
 function addProduct(initName) {
@@ -12,6 +22,6 @@ function addProduct(initName) {
     }
 }
 
-for (let i = 0; 1 < productList.length; i++) {
+for (let i = 0; i < productList.length; i++) {
     document.getElementById('cartItems').innerHTML += '<p>' + productList[i].name + '</a> <span class="price">$5</span></p>';
 }
